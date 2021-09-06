@@ -19,8 +19,7 @@ bot.hears("hello", ctx => {
 
 
 
-bot.onText(/\/maachodehpki/, (msg) => {
-function foo1() {
+ bot.hears("hello1", ctx =>  {
  const coins = ["RANDI KALAP MAT SPAM SA DARR MAT", "MAAKA BHOSDA MADERCHOOD KR PILLE PAPA SE LADEGA TU 😼😂🤤", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋"];
 const random = Math.floor(Math.random() * coins.length);
 bot.sendMessage(msg.chat.id, coins[random]);
