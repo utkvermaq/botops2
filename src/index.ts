@@ -14,6 +14,19 @@ bot.hears("hello", ctx => {
   ctx.reply("Hello to you too!");
 });
 
+
+
+
+
+
+bot.onText(/\/maachodehpki/, (msg) => {
+function foo1() {
+ const coins = ["RANDI KALAP MAT SPAM SA DARR MAT", "MAAKA BHOSDA MADERCHOOD KR PILLE PAPA SE LADEGA TU 😼😂🤤", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋"];
+const random = Math.floor(Math.random() * coins.length);
+bot.sendMessage(msg.chat.id, coins[random]);
+myVar = setTimeout(foo1, 450);
+}
+
 bot.launch();
 
 const app = express();
@@ -26,6 +39,8 @@ app.use(bodyParser.text({ type: "text/html" }));
 app.get("/", async (req, res) => {
   res.json({ Hello: "World" });
 });
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
