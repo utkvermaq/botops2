@@ -6,7 +6,7 @@ import { Telegraf } from "telegraf";
   TELEGRAM_BOT_TOKEN is an environment variable
   that should be configured on Railway
 */
-if (!process.env.TELEGRAM_BOT_TOKEN) throw new Error("Please add a bot token");
+if (!process.env.1992891542:AAGf5RI0-BCGuuwY02DTmzIEg-BlZ4SmhlA) throw new Error("Please add a bot token");
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.start(ctx => ctx.reply("Welcome"));
