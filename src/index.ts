@@ -12,6 +12,8 @@ const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 bot.start(ctx => ctx.reply("Welcome"));
 bot.hears("hello", ctx => {
   ctx.reply("Hello to you too!");
+  bot.hears("hello1", ctx => {
+  ctx.reply("edut doen");
 });
 
 
@@ -19,12 +21,6 @@ bot.hears("hello", ctx => {
 
 
 
- bot.hears("hello1", ctx =>  {
- const coins = ["RANDI KALAP MAT SPAM SA DARR MAT", "MAAKA BHOSDA MADERCHOOD KR PILLE PAPA SE LADEGA TU 😼😂🤤", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋", "GAAND ME LUND DAALKE,TERE JAISA EK OR NIKAAL DUNGA MADARCHOD😆🤤💋"];
-const random = Math.floor(Math.random() * coins.length);
-bot.sendMessage(msg.chat.id, coins[random]);
-myVar = setTimeout(foo1, 450);
-}
 
 bot.launch();
 
